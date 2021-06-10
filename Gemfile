@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '>= 2.7.2'
 
-gem 'discordrb', git: 'https://github.com/mattantonelli/discordrb', branch: 'button-interactions'
+gem 'discordrb', git: 'https://github.com/mattantonelli/discordrb', branch: 'button-interactions-roles-fix'
 
 group :development do
   gem 'capistrano', '3.10.2'
