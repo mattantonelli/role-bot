@@ -50,3 +50,7 @@ POST https://discordapp.com/api/channels/12345/messages
 ```
 
 See the [Discord documentation](https://discord.com/developers/docs/interactions/message-components) for more details.
+
+## Example
+
+![Example](https://repository-images.githubusercontent.com/375517784/4eb25000-c9e3-11eb-866c-7e7ad5d58739)
