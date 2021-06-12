@@ -1,7 +1,8 @@
 GIT
-  remote: https://github.com/mattantonelli/discordrb
-  revision: 162092a25660a690ed3beb3928004051b634977c
-  branch: button-interactions-roles-fix
+  remote: https://github.com/shardlab/discordrb
+  revision: bc303a9c35b7b68222791c520f916eddc9a6c209
+  ref: bc303a9
+  branch: slash_commands
   specs:
     discordrb (3.4.2)
       discordrb-webhooks (~> 3.4.2)

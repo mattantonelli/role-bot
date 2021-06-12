@@ -10,16 +10,16 @@ module RoleBot
 
   bot.interaction_create do |event|
     user = event.user
-    role_id = event.interaction.button['custom_id'].to_i
+    role_id = event.interaction.button['custom_id']
     app = event.interaction.button['label']
 
-    if user.roles.map(&:id).include?(role_id)
+    if user.role?(role_id)
       user.remove_role(role_id)
-      Discordrb::LOGGER.info("#{user.username}##{user.discriminator}: -#{app}")
+      Discordrb::LOGGER.info("#{user.distinct}: -#{app}")
       event.respond(content: "You will no longer receive notifications when #{app} is updated.", ephemeral: true)
     else
       user.add_role(role_id)
-      Discordrb::LOGGER.info("#{user.username}##{user.discriminator}: +#{app}")
+      Discordrb::LOGGER.info("#{user.distinct}: +#{app}")
       event.respond(content: "You will now receive notifications when #{app} is updated.", ephemeral: true)
     end
   end
