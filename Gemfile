@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '>= 2.7.2'
 
-gem 'discordrb', git: 'https://github.com/shardlab/discordrb', branch: 'slash_commands', ref: 'bc303a9'
+gem 'discordrb', git: 'https://github.com/shardlab/discordrb', branch: 'main'
 
 group :development do
   gem 'capistrano', '3.10.2'

@@ -10,8 +10,8 @@ module RoleBot
 
   bot.interaction_create do |event|
     user = event.user
-    role_id = event.interaction.button['custom_id']
-    app = event.interaction.button['label']
+    role_id = event.interaction.button.custom_id
+    app = event.interaction.button.label
 
     if user.role?(role_id)
       user.remove_role(role_id)
